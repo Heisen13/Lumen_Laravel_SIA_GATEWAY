@@ -42,4 +42,14 @@ public function delete($id)
     return $this->successResponse($this->user2Service->deleteUser2($id));
 }
 
+public function indexjob()
+{
+    return $this->successResponse($this->user2Service->obtainUsersjob2());
+}
+
+public function showjob($id)
+{
+    return $this->successResponse($this->user2Service->obtainUserjob2($id));
+}
+
 }

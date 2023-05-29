@@ -39,4 +39,14 @@ public function editUser1($data, $id)
     return $this->performRequest('DELETE', "/users/{$id}");
     }
     
+    public function obtainUsersjob1()
+    {
+    return $this->performRequest('GET','/usersjob');
+    }
+
+    public function obtainUserjob1($id)
+    {
+    return $this->performRequest('GET',"/usersjob/{$id}");
+    }
+    
 }
